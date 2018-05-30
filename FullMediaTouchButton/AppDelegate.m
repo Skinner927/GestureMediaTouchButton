@@ -19,20 +19,9 @@ static const NSTouchBarItemIdentifier touchButtonIdentifier = @"com.dennisskinne
 
 @implementation AppDelegate
 
-- (void)click:(id)sender
-{
-    NSLog(@"CLICK");
-}
-
 - (void)applicationDidFinishLaunching:(NSNotification *)aNotification {
-    // Insert code here to initialize your application
-    
-    TouchGestureButton *gestureButton = [TouchGestureButton create];
-    //TouchGestureButton *gestureButton = [[TouchGestureButton alloc] init];
-    //NSButton *gestureButton = [NSButton buttonWithTitle:@"\U0001F43C" target: self action: @selector(click:)];
-    
     NSCustomTouchBarItem *barItem = [[NSCustomTouchBarItem alloc] initWithIdentifier:touchButtonIdentifier];
-    barItem.view = gestureButton;
+    barItem.view = [TouchGestureButton create];
     
     [NSTouchBarItem addSystemTrayItem:barItem];
     DFRElementSetControlStripPresenceForIdentifier(touchButtonIdentifier, YES);
@@ -40,7 +29,7 @@ static const NSTouchBarItemIdentifier touchButtonIdentifier = @"com.dennisskinne
 
 
 - (void)applicationWillTerminate:(NSNotification *)aNotification {
-    // Insert code here to tear down your application
+    // Not really sure how to clean this up but that looked ok.
     DFRElementSetControlStripPresenceForIdentifier(touchButtonIdentifier, NO);
 }
 

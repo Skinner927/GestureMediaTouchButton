@@ -16,6 +16,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		95878EE620BF328400838B9C /* DebugLog.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DebugLog.h; sourceTree = "<group>"; };
 		958F2CB720BECEB20070089A /* FullMediaTouchButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FullMediaTouchButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		958F2CBA20BECEB20070089A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		958F2CBB20BECEB20070089A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -72,6 +73,7 @@
 				958F2CCB20BECF5E0070089A /* TouchGestureButton.m */,
 				958F2CCD20BECF680070089A /* TouchGestureButton.h */,
 				958F2CCE20BED5480070089A /* TouchBar.h */,
+				95878EE620BF328400838B9C /* DebugLog.h */,
 			);
 			path = FullMediaTouchButton;
 			sourceTree = "<group>";
