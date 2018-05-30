@@ -1,0 +1,351 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		958F2CBC20BECEB20070089A /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 958F2CBB20BECEB20070089A /* AppDelegate.m */; };
+		958F2CBE20BECEB40070089A /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 958F2CBD20BECEB40070089A /* Assets.xcassets */; };
+		958F2CC120BECEB40070089A /* MainMenu.xib in Resources */ = {isa = PBXBuildFile; fileRef = 958F2CBF20BECEB40070089A /* MainMenu.xib */; };
+		958F2CC420BECEB40070089A /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 958F2CC320BECEB40070089A /* main.m */; };
+		958F2CCC20BECF5E0070089A /* TouchGestureButton.m in Sources */ = {isa = PBXBuildFile; fileRef = 958F2CCB20BECF5E0070089A /* TouchGestureButton.m */; };
+		958F2CD120BED6170070089A /* DFRFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 958F2CD020BED6170070089A /* DFRFoundation.framework */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		958F2CB720BECEB20070089A /* FullMediaTouchButton.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = FullMediaTouchButton.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		958F2CBA20BECEB20070089A /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		958F2CBB20BECEB20070089A /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		958F2CBD20BECEB40070089A /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		958F2CC020BECEB40070089A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/MainMenu.xib; sourceTree = "<group>"; };
+		958F2CC220BECEB40070089A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		958F2CC320BECEB40070089A /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		958F2CC520BECEB40070089A /* FullMediaTouchButton.entitlements */ = {isa = PBXFileReference; lastKnownFileType = text.plist.entitlements; path = FullMediaTouchButton.entitlements; sourceTree = "<group>"; };
+		958F2CCB20BECF5E0070089A /* TouchGestureButton.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TouchGestureButton.m; sourceTree = "<group>"; };
+		958F2CCD20BECF680070089A /* TouchGestureButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchGestureButton.h; sourceTree = "<group>"; };
+		958F2CCE20BED5480070089A /* TouchBar.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TouchBar.h; sourceTree = "<group>"; };
+		958F2CD020BED6170070089A /* DFRFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = DFRFoundation.framework; path = ../../../../../System/Library/PrivateFrameworks/DFRFoundation.framework; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		958F2CB420BECEB20070089A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958F2CD120BED6170070089A /* DFRFoundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		958F2CAE20BECEB20070089A = {
+			isa = PBXGroup;
+			children = (
+				958F2CB920BECEB20070089A /* FullMediaTouchButton */,
+				958F2CB820BECEB20070089A /* Products */,
+				958F2CCF20BED6160070089A /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		958F2CB820BECEB20070089A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				958F2CB720BECEB20070089A /* FullMediaTouchButton.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		958F2CB920BECEB20070089A /* FullMediaTouchButton */ = {
+			isa = PBXGroup;
+			children = (
+				958F2CBA20BECEB20070089A /* AppDelegate.h */,
+				958F2CBB20BECEB20070089A /* AppDelegate.m */,
+				958F2CBD20BECEB40070089A /* Assets.xcassets */,
+				958F2CBF20BECEB40070089A /* MainMenu.xib */,
+				958F2CC220BECEB40070089A /* Info.plist */,
+				958F2CC320BECEB40070089A /* main.m */,
+				958F2CC520BECEB40070089A /* FullMediaTouchButton.entitlements */,
+				958F2CCB20BECF5E0070089A /* TouchGestureButton.m */,
+				958F2CCD20BECF680070089A /* TouchGestureButton.h */,
+				958F2CCE20BED5480070089A /* TouchBar.h */,
+			);
+			path = FullMediaTouchButton;
+			sourceTree = "<group>";
+		};
+		958F2CCF20BED6160070089A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				958F2CD020BED6170070089A /* DFRFoundation.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		958F2CB620BECEB20070089A /* FullMediaTouchButton */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 958F2CC820BECEB40070089A /* Build configuration list for PBXNativeTarget "FullMediaTouchButton" */;
+			buildPhases = (
+				958F2CB320BECEB20070089A /* Sources */,
+				958F2CB420BECEB20070089A /* Frameworks */,
+				958F2CB520BECEB20070089A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = FullMediaTouchButton;
+			productName = FullMediaTouchButton;
+			productReference = 958F2CB720BECEB20070089A /* FullMediaTouchButton.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		958F2CAF20BECEB20070089A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0940;
+				ORGANIZATIONNAME = "Dennis Skinner";
+				TargetAttributes = {
+					958F2CB620BECEB20070089A = {
+						CreatedOnToolsVersion = 9.4;
+					};
+				};
+			};
+			buildConfigurationList = 958F2CB220BECEB20070089A /* Build configuration list for PBXProject "FullMediaTouchButton" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 958F2CAE20BECEB20070089A;
+			productRefGroup = 958F2CB820BECEB20070089A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				958F2CB620BECEB20070089A /* FullMediaTouchButton */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		958F2CB520BECEB20070089A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958F2CBE20BECEB40070089A /* Assets.xcassets in Resources */,
+				958F2CC120BECEB40070089A /* MainMenu.xib in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		958F2CB320BECEB20070089A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				958F2CC420BECEB40070089A /* main.m in Sources */,
+				958F2CCC20BECF5E0070089A /* TouchGestureButton.m in Sources */,
+				958F2CBC20BECEB20070089A /* AppDelegate.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		958F2CBF20BECEB40070089A /* MainMenu.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				958F2CC020BECEB40070089A /* Base */,
+			);
+			name = MainMenu.xib;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		958F2CC620BECEB40070089A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = macosx;
+			};
+			name = Debug;
+		};
+		958F2CC720BECEB40070089A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "-";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				MACOSX_DEPLOYMENT_TARGET = 10.13;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = macosx;
+			};
+			name = Release;
+		};
+		958F2CC920BECEB40070089A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FullMediaTouchButton/FullMediaTouchButton.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FullMediaTouchButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dennisskinner.FullMediaTouchButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Debug;
+		};
+		958F2CCA20BECEB40070089A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_ENTITLEMENTS = FullMediaTouchButton/FullMediaTouchButton.entitlements;
+				CODE_SIGN_STYLE = Automatic;
+				COMBINE_HIDPI_IMAGES = YES;
+				INFOPLIST_FILE = FullMediaTouchButton/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/../Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.dennisskinner.FullMediaTouchButton;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SYSTEM_FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"$(SYSTEM_LIBRARY_DIR)/PrivateFrameworks",
+				);
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		958F2CB220BECEB20070089A /* Build configuration list for PBXProject "FullMediaTouchButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				958F2CC620BECEB40070089A /* Debug */,
+				958F2CC720BECEB40070089A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		958F2CC820BECEB40070089A /* Build configuration list for PBXNativeTarget "FullMediaTouchButton" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				958F2CC920BECEB40070089A /* Debug */,
+				958F2CCA20BECEB40070089A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 958F2CAF20BECEB20070089A /* Project object */;
+}
