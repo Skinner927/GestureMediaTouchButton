@@ -10,9 +10,9 @@
 #import "TouchGestureButton.h"
 #import "DebugLog.h"
 
-static NSString* const TOUCH_GESTURE_BUTTON_PLAY = @"\U000023EF";
-static NSString* const TOUCH_GESTURE_BUTTON_PREVIOUS = @"\U000023EE";
-static NSString* const TOUCH_GESTURE_BUTTON_NEXT = @"\U000023ED";
+static NSImage* TOUCH_GESTURE_BUTTON_PLAY = nil;
+static NSImage* TOUCH_GESTURE_BUTTON_PREVIOUS = nil;
+static NSImage* TOUCH_GESTURE_BUTTON_NEXT = nil;
 
 @interface TouchGestureButton ()
 
@@ -30,9 +30,19 @@ static NSString* const TOUCH_GESTURE_BUTTON_NEXT = @"\U000023ED";
 
 @implementation TouchGestureButton
 
++(void)initialize
+{
+    TOUCH_GESTURE_BUTTON_PLAY = [NSImage imageNamed:NSImageNameTouchBarPlayPauseTemplate];
+    TOUCH_GESTURE_BUTTON_PREVIOUS = [NSImage imageNamed:NSImageNameTouchBarSkipBackTemplate];
+    TOUCH_GESTURE_BUTTON_NEXT = [NSImage imageNamed:NSImageNameTouchBarSkipAheadTemplate];
+    [super initialize];
+}
+
 +(TouchGestureButton*)create
 {
-    TouchGestureButton *btn = [TouchGestureButton buttonWithTitle:TOUCH_GESTURE_BUTTON_PLAY target:nil action:nil];
+    //TouchGestureButton *btn = [TouchGestureButton buttonWithTitle:TOUCH_GESTURE_BUTTON_PLAY target:nil action:nil];
+    TouchGestureButton *btn = [TouchGestureButton buttonWithImage:TOUCH_GESTURE_BUTTON_PLAY target:nil action:nil];
+    
     // Touch gestures handle the click
     //[btn setTarget:btn];
     //[btn setAction:@selector(click:)];
@@ -103,7 +113,7 @@ static NSString* const TOUCH_GESTURE_BUTTON_NEXT = @"\U000023ED";
     return YES;
 }
 
-- (NSString*)showIcon:(CGFloat)x
+- (NSImage*)showIcon:(CGFloat)x
 {
     CGFloat myWidth = self.frame.size.width;
     CGFloat fudge = myWidth / 2.0;
@@ -160,9 +170,9 @@ static NSString* const TOUCH_GESTURE_BUTTON_NEXT = @"\U000023ED";
                 NSPoint location = [touch locationInView:self];
                 Debug(@"Moved at %0.2f", location.x);
                 
-                NSString* icon = [self showIcon:location.x];
-                if (icon != self.title)
-                    [self setTitle:icon];
+                NSImage* icon = [self showIcon:location.x];
+                if (icon != self.image)
+                    [self setImage:icon];
                 break;
             }
         }
@@ -185,7 +195,7 @@ static NSString* const TOUCH_GESTURE_BUTTON_NEXT = @"\U000023ED";
                 NSPoint location = [touch locationInView:self];
                 Debug(@"Ended at %0.2f", location.x);
                 
-                NSString* icon = [self showIcon:location.x];
+                NSImage* icon = [self showIcon:location.x];
                 
                 // What do?
                 if (icon == TOUCH_GESTURE_BUTTON_PREVIOUS){
@@ -201,7 +211,7 @@ static NSString* const TOUCH_GESTURE_BUTTON_NEXT = @"\U000023ED";
                 
                 // Reset state
                 self.hasSlidOutsideBox = NO;
-                [self setTitle:TOUCH_GESTURE_BUTTON_PLAY];
+                [self setImage:TOUCH_GESTURE_BUTTON_PLAY];
                 break;
             }
         }
@@ -233,7 +243,7 @@ static NSString* const TOUCH_GESTURE_BUTTON_NEXT = @"\U000023ED";
                 NSPoint location = [touch locationInView:self];
                 NSLog(@"Canceled at %0.2f", location.x);
 #endif
-                [self setTitle:TOUCH_GESTURE_BUTTON_PLAY];
+                [self setImage:TOUCH_GESTURE_BUTTON_PLAY];
             }
         }
     }

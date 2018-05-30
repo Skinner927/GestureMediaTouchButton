@@ -12,5 +12,4 @@
 #else
 #define Debug(...)
 
-#define inDebug(
 #endif
